@@ -68,46 +68,6 @@ foreach ( $types as $type ) {
 		 * @param array $args An array of arguments used to retrieve the recent posts.
 		 */
 		 $cat_name = ($taxonomi == 'category')? 'category_name': $taxonomi;
-		 /*
-		 if(($taxonomi == 'category')){
-			 $cat_args = array(
-			'posts_per_page'      => $sayi,
-			'no_found_rows'       => true,
-			'post_status'         => 'publish',
-			'ignore_sticky_posts' => true,
-			'post_type' => 'post',
-		)  ;
-			if($category != "") $cat_args['category_name'] = $category;
-			 $r = new WP_Query( $cat_args );
-			 /*
-			$cat_array = explode(',',$category);
-			if(!empty($cat_array)){
-		 $cat_args = array(
-	'post_type' => $posttype,
-	'posts_per_page'		=> $sayi,
-			'no_found_rows'			=> false,
-			'post_status'			=> 'publish',
-	'tax_query' => array(
-		array(
-			'taxonomy' => $taxonomi,
-			'field'    => 'slug',
-			'terms'    => $cat_array,
-		),
-	),
-);
-$r = new WP_Query( apply_filters( 'widget_custom_posts_args', $cat_args));
-			}else{
-$r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
-			'posts_per_page'		=> $sayi,
-			'no_found_rows'			=> false,
-			'post_status'			=> 'publish',
-			'ignore_sticky_posts'	=> true,
-			'post_type' 			=> 'post',
-		) ) );		
-			}
-		 }else{
-
-		 */
 		$r = new WP_Query( array(
 			'posts_per_page'		=> $sayi,
 			'no_found_rows'			=> false,
@@ -116,8 +76,6 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 			"$cat_name"		=> "$category",
 			'post_type' 			=> $posttype,
 		) ) ;
-
-		 //}
 		if ($r->have_posts()) :
 ?>
 		<?php echo $args['before_widget']; ?>
@@ -132,17 +90,6 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 				//$post_format = ert_get_post_format();
 
 				if ( $show_thumb ) {
-					/*
-					if ( in_array( $post_format, array( $posttype, 'video', 'quote', 'link', 'audio', 'map', 'text' ) ) ) {
-						$thumb_src = ert_get_post_format_thumb( $post_format );
-						$img_style = sprintf( 'background-color:%s', 'red' );
-					} else if ( 'gallery' == $post_format ) {
-						$thumb_src = ert_get_gallery_post_format_thumb();
-					} else if ( !get_post_thumbnail_id() ) {
-						$thumb_src = ert_get_post_format_thumb( 'text', 'icon' );
-						$img_style = sprintf( 'background-color:%s', $color );
-					}
-					*/
 					$thumb_args = array(
 						'a_class'   => array('widget_list_thumbnail'),
 						'size'      => 'ert_RPPT_thumb',
@@ -151,7 +98,6 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 					);
 
 					echo ert_get_post_thumb( $thumb_args ); 
-
 				}
 				
 				?>
