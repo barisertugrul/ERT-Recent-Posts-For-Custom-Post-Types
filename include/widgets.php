@@ -1,19 +1,8 @@
 <?php
 /*************************************
-<<<<<<< HEAD
-	Özel Yazý Türü Son Eklenenler
+	Ã–zel YazÄ± TÃ¼rÃ¼ Son Eklenenler BileÅŸeni
 *************************************/
 
-/*
- * Özel Yazý Türü Son Eklenenler Bileþeni
-=======
-	Ã–zel YazÄ± TÃ¼rÃ¼ Son Eklenenler
-*************************************/
-
-/*
- * Ã–zel YazÄ± TÃ¼rÃ¼ Son Eklenenler BileÅŸeni
->>>>>>> origin/master
- */
 class ert_RecentCustomPosts extends WP_Widget {
 
 	public function __construct() {
@@ -142,9 +131,9 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 				<?php
 				
 <<<<<<< HEAD
-				//Resimli versiyon için
-=======
 				//Resimli versiyon iÃ§in
+=======
+				//Resimli versiyon iÃƒÂ§in
 >>>>>>> origin/master
 				//$color = ert_get_post_category_color();
 				//$post_format = ert_get_post_format();
@@ -184,9 +173,9 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 					<?php
 					
 <<<<<<< HEAD
-					//Meta bilgilerinin gösterimi için
-=======
 					//Meta bilgilerinin gÃ¶sterimi iÃ§in
+=======
+					//Meta bilgilerinin gÃƒÂ¶sterimi iÃƒÂ§in
 >>>>>>> origin/master
 					$meta_args = array(
 						'post_date'     => $show_date,
@@ -320,8 +309,4 @@ foreach ( $taxonomies as $tax ) {
 	}
 
 }
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> origin/master
