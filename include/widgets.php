@@ -65,49 +65,6 @@ foreach ( $types as $type ) {
 		 * @param array $args An array of arguments used to retrieve the recent posts.
 		 */
 		 $cat_name = ($taxonomi == 'category')? 'category_name': $taxonomi;
-<<<<<<< HEAD
-		 /*
-		 if(($taxonomi == 'category')){
-			 $cat_args = array(
-			'posts_per_page'      => $sayi,
-			'no_found_rows'       => true,
-			'post_status'         => 'publish',
-			'ignore_sticky_posts' => true,
-			'post_type' => 'post',
-		)  ;
-			if($category != "") $cat_args['category_name'] = $category;
-			 $r = new WP_Query( $cat_args );
-			 /*
-			$cat_array = explode(',',$category);
-			if(!empty($cat_array)){
-		 $cat_args = array(
-	'post_type' => $posttype,
-	'posts_per_page'		=> $sayi,
-			'no_found_rows'			=> false,
-			'post_status'			=> 'publish',
-	'tax_query' => array(
-		array(
-			'taxonomy' => $taxonomi,
-			'field'    => 'slug',
-			'terms'    => $cat_array,
-		),
-	),
-);
-$r = new WP_Query( apply_filters( 'widget_custom_posts_args', $cat_args));
-			}else{
-$r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
-			'posts_per_page'		=> $sayi,
-			'no_found_rows'			=> false,
-			'post_status'			=> 'publish',
-			'ignore_sticky_posts'	=> true,
-			'post_type' 			=> 'post',
-		) ) );		
-			}
-		 }else{
-
-		 */
-=======
->>>>>>> origin/master
 		$r = new WP_Query( array(
 			'posts_per_page'		=> $sayi,
 			'no_found_rows'			=> false,
@@ -116,11 +73,6 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 			"$cat_name"		=> "$category",
 			'post_type' 			=> $posttype,
 		) ) ;
-<<<<<<< HEAD
-
-		 //}
-=======
->>>>>>> origin/master
 		if ($r->have_posts()) :
 ?>
 		<?php echo $args['before_widget']; ?>
@@ -129,30 +81,9 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 		<?php while ( $r->have_posts() ) : $r->the_post(); ?>
 			<li>
 				<?php
-				
-<<<<<<< HEAD
-				//Resimli versiyon için
-=======
-				//Resimli versiyon iÃ§in
->>>>>>> origin/master
-				//$color = ert_get_post_category_color();
-				//$post_format = ert_get_post_format();
+
 
 				if ( $show_thumb ) {
-<<<<<<< HEAD
-					/*
-					if ( in_array( $post_format, array( $posttype, 'video', 'quote', 'link', 'audio', 'map', 'text' ) ) ) {
-						$thumb_src = ert_get_post_format_thumb( $post_format );
-						$img_style = sprintf( 'background-color:%s', 'red' );
-					} else if ( 'gallery' == $post_format ) {
-						$thumb_src = ert_get_gallery_post_format_thumb();
-					} else if ( !get_post_thumbnail_id() ) {
-						$thumb_src = ert_get_post_format_thumb( 'text', 'icon' );
-						$img_style = sprintf( 'background-color:%s', $color );
-					}
-					*/
-=======
->>>>>>> origin/master
 					$thumb_args = array(
 						'a_class'   => array('widget_list_thumbnail'),
 						'size'      => 'ert_RPPT_thumb',
@@ -161,22 +92,15 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 					);
 
 					echo ert_get_post_thumb( $thumb_args ); 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 				}
 				
 				?>
 				<div class="post_info">
 					<a href="<?php the_permalink(); ?>" class="title"><?php get_the_title() ? the_title() : the_ID(); ?></a></br>
 					<?php
-					
-<<<<<<< HEAD
 					//Meta bilgilerinin gösterimi için
-=======
-					//Meta bilgilerinin gÃ¶sterimi iÃ§in
->>>>>>> origin/master
+
 					$meta_args = array(
 						'post_date'     => $show_date,
 						'categories'    => $show_categories,
@@ -304,6 +228,15 @@ foreach ( $taxonomies as $tax ) {
 		<input class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>"
         type="text" value="<?php echo esc_attr( $category ); ?>" />
         <small><?php _e( 'For multiple category use separate by commas', 'ert_rcp' ); ?></small>
+		</p>
+		<p>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="KEE2GJZHSDK9A">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/tr_TR/i/scr/pixel.gif" width="1" height="1">
+</form>
+
 		</p>
 		<?php 
 	}
