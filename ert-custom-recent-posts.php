@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿<?php
+=======
+<?php
+>>>>>>> origin/master
 /*
 * Plugin Name: ERT Recent Custom Posts
 * Plugin URI: https://github.com/barisertugrul/ERT-Recent-Posts-For-Custom-Post-Types
@@ -332,4 +336,8 @@ function ert_get_post_thumb( $args = array() ) {
 
 	return $image_output;
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> origin/master

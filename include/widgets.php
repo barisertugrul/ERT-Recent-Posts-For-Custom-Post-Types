@@ -1,10 +1,18 @@
 <?php
 /*************************************
+<<<<<<< HEAD
 	Özel Yazý Türü Son Eklenenler
 *************************************/
 
 /*
  * Özel Yazý Türü Son Eklenenler Bileþeni
+=======
+	Ã–zel YazÄ± TÃ¼rÃ¼ Son Eklenenler
+*************************************/
+
+/*
+ * Ã–zel YazÄ± TÃ¼rÃ¼ Son Eklenenler BileÅŸeni
+>>>>>>> origin/master
  */
 class ert_RecentCustomPosts extends WP_Widget {
 
@@ -68,6 +76,7 @@ foreach ( $types as $type ) {
 		 * @param array $args An array of arguments used to retrieve the recent posts.
 		 */
 		 $cat_name = ($taxonomi == 'category')? 'category_name': $taxonomi;
+<<<<<<< HEAD
 		 /*
 		 if(($taxonomi == 'category')){
 			 $cat_args = array(
@@ -108,6 +117,8 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 		 }else{
 
 		 */
+=======
+>>>>>>> origin/master
 		$r = new WP_Query( array(
 			'posts_per_page'		=> $sayi,
 			'no_found_rows'			=> false,
@@ -116,8 +127,11 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 			"$cat_name"		=> "$category",
 			'post_type' 			=> $posttype,
 		) ) ;
+<<<<<<< HEAD
 
 		 //}
+=======
+>>>>>>> origin/master
 		if ($r->have_posts()) :
 ?>
 		<?php echo $args['before_widget']; ?>
@@ -127,11 +141,16 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 			<li>
 				<?php
 				
+<<<<<<< HEAD
 				//Resimli versiyon için
+=======
+				//Resimli versiyon iÃ§in
+>>>>>>> origin/master
 				//$color = ert_get_post_category_color();
 				//$post_format = ert_get_post_format();
 
 				if ( $show_thumb ) {
+<<<<<<< HEAD
 					/*
 					if ( in_array( $post_format, array( $posttype, 'video', 'quote', 'link', 'audio', 'map', 'text' ) ) ) {
 						$thumb_src = ert_get_post_format_thumb( $post_format );
@@ -143,6 +162,8 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 						$img_style = sprintf( 'background-color:%s', $color );
 					}
 					*/
+=======
+>>>>>>> origin/master
 					$thumb_args = array(
 						'a_class'   => array('widget_list_thumbnail'),
 						'size'      => 'ert_RPPT_thumb',
@@ -151,7 +172,10 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 					);
 
 					echo ert_get_post_thumb( $thumb_args ); 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 				}
 				
 				?>
@@ -159,7 +183,11 @@ $r = new WP_Query( apply_filters( 'widget_custom_posts_args', array(
 					<a href="<?php the_permalink(); ?>" class="title"><?php get_the_title() ? the_title() : the_ID(); ?></a></br>
 					<?php
 					
+<<<<<<< HEAD
 					//Meta bilgilerinin gösterimi için
+=======
+					//Meta bilgilerinin gÃ¶sterimi iÃ§in
+>>>>>>> origin/master
 					$meta_args = array(
 						'post_date'     => $show_date,
 						'categories'    => $show_categories,
@@ -292,4 +320,8 @@ foreach ( $taxonomies as $tax ) {
 	}
 
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> origin/master
