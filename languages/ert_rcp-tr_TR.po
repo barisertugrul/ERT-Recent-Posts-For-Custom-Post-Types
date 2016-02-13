@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ERT Custom Recent Posts\n"
+"POT-Creation-Date: 2016-02-13 02:43+0200\n"
+"PO-Revision-Date: 2016-02-13 02:48+0200\n"
+"Last-Translator: Barış ERTUĞRUL <barisertugrul@ert.gen.tr>\n"
+"Language-Team: Barış ERTUĞRUL <barisertugrul@ert.gen.tr>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: ert-custom-recent-posts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: ert-custom-recent-posts.php:13
+msgid "Sorry, you are not allowed to access this page directly."
+msgstr "Üzgünüz, Bu sayfaya doğrudan erişime izin verilmez."
+
+#: ert-custom-recent-posts.php:41
+#, php-format
+msgid "by %s"
+msgstr "%s tarafından"
+
+#: ert-custom-recent-posts.php:94
+#, php-format
+msgid "Posts by %s"
+msgstr "%s tarafından"
+
+#: ert-custom-recent-posts.php:116
+msgid "comment count"
+msgstr "Yorum sayısı"
+
+#: ert-custom-recent-posts.php:122
+#, php-format
+msgid "Rating: %0.2f"
+msgstr "Puan: %0.2f"
+
+#: include/widgets.php:13
+msgid "Your site&#8217;s most recent posts for custom post types."
+msgstr "Sitenizdeki en son özel tipli yazılar."
+
+#: include/widgets.php:15
+msgid "ERT - Recent Posts For Custom Post Types"
+msgstr "ERT - Özel Yazı Tipleri için Son Eklenenler"
+
+#: include/widgets.php:56
+#, php-format
+msgid "Recent %s"
+msgstr "En son %s"
+
+#: include/widgets.php:226
+msgid "Number of posts to show:"
+msgstr "Gösterilecek yazı sayısı:"
+
+#: include/widgets.php:230
+msgid "Display post date?"
+msgstr "Yazı tarihi gösterilsin"
+
+#: include/widgets.php:233
+msgid "Display post thumbnail?"
+msgstr "Yazı görseli gösterilsin"
+
+#: include/widgets.php:236
+msgid "Display post categories?"
+msgstr "Yazı kategorileri gösterilsin"
+
+#: include/widgets.php:239
+msgid "Title:"
+msgstr "Başlık:"
+
+#: include/widgets.php:254
+msgid "Post Type:"
+msgstr "Yazı Türü:"
+
+#: include/widgets.php:280
+msgid "Taxonomy Filter:"
+msgstr "Taksonomi:"
+
+#: include/widgets.php:286
+msgid "Category Slug:"
+msgstr "Kategori Kısa İsmi (slug):"
+
+#: include/widgets.php:289
+msgid "For multiple category use separate by commas"
+msgstr ""
+"Birden çok kategori görüntülemek için, her bir kategoriyi virgülle ayırın."
+
+#. Plugin Name of the plugin/theme
+msgid "ERT Recent Custom Posts"
+msgstr "ERT Recent Custom Posts"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/ertyazilim/"
+msgstr "https://github.com/ertyazilim/"
+
+#. Description of the plugin/theme
+msgid ""
+"This plugin, allows you to insert a \"Recent Posts\" widget in sidebar for "
+"your custom posts. İt includes date, category and thumbnail display options. "
+"Simple and easy to use. Thanks for using."
+msgstr ""
+"Bu eklenti, özel yazı türleriniz için, kenar çubuğuna, yazı kategorisi, yazı "
+"tarihi ve yazı görselinin görüntülenip görüntülenmeyeceği seçeneklerini "
+"içeren bir Son Yazılar bileşeni eklemenize izin verir. Kullanımı basit ve "
+"kolaydır. Eklentimizi kullandığınız için teşekkür ederiz."
+
+#. Author of the plugin/theme
+msgid "Barış ERTUĞRUL"
+msgstr "Barış ERTUĞRUL"
+
+#. Author URI of the plugin/theme
+msgid "http://www.barisertugrul.com/"
+msgstr "http://www.barisertugrul.com/"
