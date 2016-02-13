@@ -1,0 +1,41 @@
+.widget_list_thumbnail{
+  display: inline-block;
+  //background: #00a8ff;
+  background:#6699CC;;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  min-height: 50px;
+  margin: 0 10px 0 0;
+  vertical-align: center;
+  overflow: hidden;
+  float:left;
+  border: solid 2px;
+  border-color: #003399;
+}
+
+.post-meta {
+  font-size: 12px;
+  //line-height: 1.7em;
+  //text-transform: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.post-meta a {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.post-meta .rating-star:before {
+  color: #ffffff;
+}
+
+.post_info{
+	float:left;
+}
